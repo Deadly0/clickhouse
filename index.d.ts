@@ -1,6 +1,6 @@
 /// <reference types="node" />
 
-declare module 'clickhouse' {
+declare module 'clickhouse-post' {
   import {Stream} from 'stream';
 
   type callbackExec = (error: Error, rows?: Object[]) => void;
