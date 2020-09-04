@@ -83,7 +83,7 @@
       "email": "dim901@yandex.ru"
     }
   ],
-  "name": "clickhouse",
+  "name": "clickhouse-post",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TimonKK/clickhouse.git"
