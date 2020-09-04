@@ -507,8 +507,6 @@ class QueryCursor {
 
 				params['body'] = query;
 			} else if (me.isInsert) {
-				url.searchParams.append('query', query);
-
 				if (query.match(/values/i)) {
 					//
 				} else {
@@ -518,6 +516,8 @@ class QueryCursor {
 						params['body'] = me._getBodyForInsert();
 					}
 				}
+
+				url.searchParams.append('query', query);
 			}
 		}
 
