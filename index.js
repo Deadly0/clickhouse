@@ -519,6 +519,9 @@ class QueryCursor {
 
 				url.searchParams.append('query', query);
 			}
+			else {
+				params['body'] = query;
+			}
 		}
 
 		if (me.opts.sessionId !== undefined && typeof me.opts.sessionId === 'string') {
